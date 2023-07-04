@@ -1,0 +1,1695 @@
+
+<!doctype html>
+<html>
+    <head>
+
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <link rel=stylesheet href="payment.css" type="text/css" >
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>Heavy Equipment</title>
+
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-select.css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/chatbtn.css" type="text/css">
+
+
+        <style>
+
+        footer + div > a > img{
+  display: none;
+}
+
+        .subscription_btn
+         {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.subscription_btn:hover {
+  background-color: #45a049;
+}
+        
+
+        .btn {
+
+    text-decoration: none;
+    border: 1px solid dimgrey;
+    background-color: transparent;
+    color: black;
+    margin: 5px;
+    padding: 2px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius:5px;
+    display: inline-block;
+}
+
+
+      .buy {
+  border-color: dimgrey;
+  color: dimgrey;
+}
+
+.buy:hover {
+  background-color: dimgrey;
+  color: white;
+} 
+
+
+      .buy1 {
+  border-color: dimgrey;
+  color: dimgrey;
+}
+
+.buy1:hover {
+  background-color: dimgrey;
+  color: white;
+} 
+
+  .buy2 {
+  border-color: dimgrey;
+  color: dimgrey;
+}
+
+.buy2:hover {
+  background-color: dimgrey;
+  color: white;
+} 
+
+
+        table, th, td {
+    border: 0.5px solid #ddd;
+    border-collapse: collapse;
+
+
+}
+
+td
+{
+  color: grey;
+}
+th{
+    background-color: #e8ecf2;
+    color: dimgrey;
+    text-align: center;
+    padding: 5px;
+}
+
+tr{
+    line-height: 1.5;
+}
+
+
+
+        .c-chat-box {
+  border-radius: 30px;
+  text-align: right;
+  padding: 5px;
+  width: 90%;
+  margin: 0 auto;
+  color: #000;
+
+}
+
+        .animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce {
+ 0%, 100% {
+ -webkit-transform: translateY(0);
+}
+ 50% {
+ -webkit-transform: translateY(-5px);
+}
+}
+@keyframes bounce {
+ 0%, 100% {
+ transform: translateY(0);
+}
+ 50% {
+ transform: translateY(-5px);
+}
+}
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+
+     
+.footer {
+
+   position: fixed;
+   left: 5px;
+   bottom: 0;
+   width: 10%;
+   background-color: transparent;
+   color: white;
+   text-align: left;
+}
+
+
+
+       
+        .social-icons{
+
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: transparent;
+   color: white;
+   text-align: right;
+        }
+
+        .fa {
+  padding: 5px;
+  font-size: 12px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:50%;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-whatsapp {
+
+  font-size: 20px;
+  color: grey;
+}
+.fa-phone {
+
+  font-size: 17px;
+  color: grey;
+}
+
+
+
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                margin: 0;
+                padding: 0;
+                line-height: 1;
+                color: black;
+            }
+
+            
+            .company-logo
+            {
+
+                text-align: center;
+                background: #fff;
+                width:100%;
+                padding-top: 5px;
+
+            }
+
+           
+
+
+
+.container2 {
+
+
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    position: relative;
+    font-family: Arial;
+}
+
+.content {
+
+
+    font-size: 3.5vw;
+    font-family: Arial, Helvetica, sans-serif; 
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.container2 .content {
+  background: rgba(0, 0, 0, 0.7); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+}
+
+.content2 {
+
+
+    font-size: 3.5vw;
+    font-family: Arial, Helvetica, sans-serif; 
+    position: absolute;
+    bottom: 0px;
+    right:  10px;
+    background-color: transparent;
+    color: white;
+}
+.container2 .content2 {
+  background: rgba(0, 0, 0, 0); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+}
+
+ .bigbox
+            {
+
+               box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+              background-color: white;
+              background-repeat: no-repeat;
+              width: auto;
+    height: 73vw;
+    margin-top: 2px;
+    margin-right:  4px;
+    margin-left:  4px;
+    border: 0px solid red;
+    border-radius: 5px;
+              opacity: 0.95; 
+            }
+
+        </style>
+        
+    </head>
+
+
+    <body  style="background-color: #f2f2f2;">
+     
+
+
+    <header style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);">
+        <div class="company-logo"> <a href="http://www.unicorndenmart.com/" target="_blank"><img src="logo.png"  alt="Unicorn Denmart Logo"> </a></div>
+
+    </header>
+   
+
+<div class="container2">
+  <img src="1.png"  style="width:100%; height: auto; margin-top: 3px; background-repeat: no-repeat; ">
+ 
+  <div class="content" style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);padding: 3vw;">
+<p><b>Purchase Date:</b> 28/11/2017</p>
+<p><b>Warranty left:</b>&nbsp<span id="warranty"></span></p>
+  </div>
+
+<div class="content2">
+  <div class="c-chat-box animated bounce" onclick="window.location = 'https://wa.me/917838698801/?text=Hello';" > <span><img src="whatsapp.png"></span> </div>
+
+</div>  
+</div>
+
+
+
+
+
+
+
+<!------------------------------------------------------------------- The Modal---------------------88--------------------------------------------->
+
+  
+
+
+<div class="bigbox w3-center"  style="padding-top: 5vw; margin-top: 20px;">
+
+<h6 style="margin-left:  5vw; color: grey; font-size:20px;text-align: left; ">Hi Dr. Mohit</h6>
+
+  <br>
+  <p>
+  <button type="button" class="w3-btn w3-white w3-border w3-round-large" id="myBtn" style="font-size:4.5vw;padding:4vw 13.8vw; ">Support</button>
+  <button type="button" class="w3-btn w3-white w3-border w3-round-large" id="myBtn2" style="font-size:4.5vw;padding:4vw 7.45vw;">How to use it</button>
+  </p>
+  <p>
+  <button type="button" class="w3-btn w3-white w3-border w3-round-large" id="myBtn3" style="font-size:4.5vw;padding:4vw 5vw;">Renew Warranty</button>
+  <button type="button" class="w3-btn w3-white w3-border w3-round-large" id="myBtn4" style="font-size:4.5vw;padding:4vw 4.2vw;">Service Records</button>
+  </p>
+  <p>
+  <button type="button" class="w3-btn w3-white w3-border w3-round-large" id="myBtn5" style="font-size:4.5vw;padding:4vw 32vw;">Collaborate</button>
+  </p>
+
+</div>
+
+<!----------------------------------------------------------The Modal box for- Support---------------------------------------------------------------------->
+<div class="container">
+  <br>
+  <!-- Trigger the modal with a button -->
+  
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #EB4603; border-radius: 6px 6px 0px 0px; color: white;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="font-size: 16px;">Please Choose</h4>
+        </div>
+        <div class="modal-body" style="text-align: center;" >
+          <p>
+          
+          
+          
+ <!------------------------------------------------------The Modal box for- Support button 1----------------------------------------------------------------->
+         
+          
+          
+          
+          
+          
+          
+          <div class="container">
+  
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="w3-btn w3-white w3-border w3-round-large" id="myBtn6" style=" border-color: dimgrey;
+    border: 1px solid dimgrey;
+    background-color: transparent;
+    color: dimgrey;
+    padding: 16px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius:10px;
+    display: inline-block;">Product Demo</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal6" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+
+        <div class="modal-header" style="background-color: #EB4603; border-radius: 6px 6px 0px 0px; color: white;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="font-size: 16px;">Please Choose when would you like us to visit:</h4>
+        </div>
+       
+        
+        <div class="modal-body">
+          <p>
+
+            <form action="https://emailformlm.herokuapp.com/post_form" accept-charset="UTF-8" method="post">
+
+          <input type="text" name="data_to_email" id="data_to_email" hidden="true" value="lazyymonkeyy@gmail.com" />
+
+
+          <input type="text" name="content" hidden="true" value="Kindly arrange an engineer visit to Dr Mohit at time given below :">
+
+            <input type="datetime-local" name="Datetime" size="20" ><a href="#container1"><br></br>
+
+              <input type="submit" name="commit" value="submit" data-disable-with="submit" id="myBtn9" class="btn submit" style="border-color: dimgrey;
+    border: 1px solid dimgrey;
+    background-color: transparent;
+    color: dimgrey;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius:10px;
+    display: inline-block;"/></a></form>
+
+
+
+
+
+
+
+ <div class="container" id="container1">
+<p></p>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal9" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #EB4603; border-radius: 6px 6px 0px 0px; color: white; padding: 2vw;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="font-size: 16px;"></h4>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <p>
+
+Our Engineer will Shortly visit you for Product Demo.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </p>
+        </div>
+ 
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+          
+          
+<!-----------------------------------------------------------The Modal box for- Support button 2----------------------------------------------------------->
+         
+          
+         
+          <div class="container">
+  
+  <!-- Trigger the modal with a button -->
+  <br><button type="button" class="w3-btn w3-white w3-border w3-round-large" id="myBtn7" style="border-color: dimgrey;
+    border: 1px solid dimgrey;
+    background-color: transparent;
+    color: dimgrey;
+    padding: 16px 42px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius:10px;
+    display: inline-block;">Service</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal7" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+
+        <div class="modal-header" style="background-color: #EB4603; border-radius: 6px 6px 0px 0px; color: white;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="font-size: 16px;">Please Choose when would you like us to visit:</h4>
+        </div>
+       
+        
+        <div class="modal-body">
+          
+          <p>
+
+            <form action="https://emailformlm.herokuapp.com/post_form" accept-charset="UTF-8" method="post">
+
+          <input type="text" name="data_to_email" id="data_to_email" hidden="true" value="lazyymonkeyy@gmail.com" />
+
+
+          <input type="text" name="content" hidden="true" value="Kindly arrange an engineer visit to Dr Mohit at time given below :">
+
+            <input type="datetime-local" name="Datetime" size="20" ><a href="#container3"><br></br>
+
+              <input type="submit" name="commit" value="submit" data-disable-with="submit" id="myBtn10" class="btn submit" style="border-color: dimgrey;
+    border: 1px solid dimgrey;
+    background-color: transparent;
+    color: dimgrey;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius:10px;
+    display: inline-block;"/></a></form>
+
+
+
+
+
+
+
+
+ <div class="container" id="container3">
+<p></p>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal10"  role="dialog">
+
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #EB4603; border-radius: 6px 6px 0px 0px; color: white; padding: 2vw;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="font-size: 16px;"></h4>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <p>
+
+Our Engineer will Shortly visit you for Product Service.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+          </p>
+
+        </div>
+ 
+      </div>
+      
+    </div>
+  </div>
+  
+</div>     
+          
+   
+   
+<!-------------------------------------------------------------The Modal box for- Support button 3-------------------------------------------------------->
+         
+          
+         
+          <div class="container">
+  
+  <!-- Trigger the modal with a button -->
+  <br><button type="button" class="w3-btn w3-white w3-border w3-round-large" id="myBtn8" style="border-color: dimgrey;
+    border: 1px solid dimgrey;
+    background-color: transparent;
+    color: dimgrey;
+    padding: 16px 28px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius:10px;
+    display: inline-block;">Not Working</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal8" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+       <div class="modal-header" style="background-color: #EB4603; border-radius: 6px 6px 0px 0px; color: white;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="font-size: 16px;">Please Choose when would you like us to visit:</h4>
+        </div>
+       
+        
+        <div class="modal-body">
+          
+          <p>
+
+           <form action="https://emailformlm.herokuapp.com/post_form" accept-charset="UTF-8" method="post">
+
+          <input type="text" name="data_to_email" id="data_to_email" hidden="true" value="lazyymonkeyy@gmail.com" />
+
+          <input type="text" name="content" hidden="true" value="Kindly arrange an engineer visit to Dr Mohit at time given below :">
+
+            <input type="datetime-local" name="Datetime" size="20" ><a href="#container4"><br></br>
+
+              <input type="submit" name="commit" value="submit" data-disable-with="submit" id="myBtn11" class="btn submit" style="border-color: dimgrey;
+    border: 1px solid dimgrey;
+    background-color: transparent;
+    color: dimgrey;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius:10px;
+    display: inline-block;"/></a></form>
+
+
+
+
+
+ <div class="container" id="container4">
+<p></p>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal11"  role="dialog">
+
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #EB4603; border-radius: 6px 6px 0px 0px; color: white; padding: 2vw;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="font-size: 16px;"></h4>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <p>
+
+Our Engineer will Shortly visit you to see whats wrong with the product.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </p>
+
+        </div>
+ 
+      </div>
+      
+    </div>
+  </div>
+  
+</div>   
+
+
+   
+          
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+<!----------------------------------------------------------------The Modal box for- How to Use it--------------------------------------------------------->
+
+<div class="container">
+<p></p>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #EB4603; border-radius: 6px 6px 0px 0px; color: white;" >
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="font-size: 16px;">Please Choose :</h4>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <p>
+
+            <!-- button1-->
+       <p><a target="_blank" href="https://www.youtube.com/watch?v=9LyhnjYgqDA"><br></br><button class="btn submit" style="border-color: dimgrey;
+    border: 1px solid dimgrey;
+    background-color: transparent;
+    color: dimgrey;
+    padding: 16px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius:10px;
+    display: inline-block;"> Product Video</button></a></p>
+
+<!-- button2-->
+      <p><a target="_blank" href="http://www.unicorndenmart.com/assets/images/products/pdf/04_CBCT.pdf"></br><button class="btn submit" style="border-color: dimgrey;
+    border: 1px solid dimgrey;
+    background-color: transparent;
+    color: dimgrey;
+    padding: 16px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius:10px;
+    display: inline-block;"> Download PDF</button></a></p>
+    
+
+          </p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
+<!-----------------------------------------------------------------The Modal box for- Renew Warranty------------------------------------------------------>
+
+<div class="container">
+<p></p>
+  
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog"  style="height: 100%;" >
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #EB4603; border-radius: 6px 6px 0px 0px; color: white;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="font-size: 16px;">Please Choose :</h4>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <p>
+
+               
+
+        <table style="width:100%">
+  <tr>
+    <th>Year</th>
+    <th>Price (in INR)</th> 
+    <th>Buy</th>
+  </tr>
+  <tr>
+    <td>1 Year</td>
+    <td>8,000</td>
+    <td><a href="#container5"> <button class="btn buy" id="myBtn12">Buy</button></a>
+
+
+
+
+
+ <div class="container" id="container5">
+<p></p>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal12"  role="dialog">
+
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #767689; border-radius: 6px 6px 0px 0px; color: white; padding: 2vw;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="font-size: 16px;">Pay using your Debit/Credit card.</h4>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <p>
+
+
+            
+          
+    <div class="row">
+        <!-- You can make it whatever width you want. I'm making it full width
+             on <= small devices and 4/12 page width on >= medium devices -->
+        <div class="col-xs-12 col-md-4">
+        
+        
+            <!-- CREDIT CARD FORM STARTS HERE -->
+            <div class="panel panel-default credit-card-box">
+                <div class="panel-heading display-table" >
+                    <div class="row display-tr" >
+                        <h3 class="panel-title display-td" >Payment Details</h3>
+                        <div class="display-td" >                            
+                            <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                        </div>
+                    </div>                    
+                </div>
+                <div class="panel-body">
+                    <form role="form" id="payment-form" method="POST" action="javascript:void(0);">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="cardNumber">CARD NUMBER</label>
+                                    <div class="input-group">
+                                        <input 
+                                            type="tel"
+                                            class="form-control"
+                                            name="cardNumber"
+                                            placeholder="Valid Card Number"
+                                            autocomplete="cc-number"
+                                            required autofocus 
+                                        />
+                                        <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                                    <input 
+                                        type="tel" 
+                                        class="form-control" 
+                                        name="cardExpiry"
+                                        placeholder="MM / YY"
+                                        autocomplete="cc-exp"
+                                        required 
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 pull-right">
+                                <div class="form-group">
+                                    <label for="cardCVC">CV CODE</label>
+                                    <input 
+                                        type="tel" 
+                                        class="form-control"
+                                        name="cardCVC"
+                                        placeholder="CVC"
+                                        autocomplete="cc-csc"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="couponCode">COUPON CODE</label>
+                                    <input type="text" class="form-control" name="couponCode" />
+                                </div>
+                            </div>                        
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <input type="submit" value="START SUBSCRIPTION" class="subscription_btn">
+                            </div>
+                        </div>
+                        <div class="row" style="display:none;">
+                            <div class="col-xs-12">
+                                <p class="payment-errors"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>            
+            <!-- CREDIT CARD FORM ENDS HERE -->
+            
+            
+        </div>            
+        
+        
+    </div>
+
+
+
+
+
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+    </td>
+  </tr>
+  <tr>
+    <td>3 Year</td>
+    <td>16,000</td>
+    
+    <td><a href="#container6"> <button class="btn buy" id="myBtn13">Buy</button></a>
+
+
+
+
+
+ <div class="container" id="container6">
+<p></p>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal13"  role="dialog">
+
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #767689; border-radius: 6px 6px 0px 0px; color: white; padding: 2vw;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="font-size: 16px;">Pay using your Debit/Credit card.</h4>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <p>
+
+
+
+          
+    <div class="row">
+        <!-- You can make it whatever width you want. I'm making it full width
+             on <= small devices and 4/12 page width on >= medium devices -->
+        <div class="col-xs-12 col-md-4">
+        
+        
+            <!-- CREDIT CARD FORM STARTS HERE -->
+            <div class="panel panel-default credit-card-box">
+                <div class="panel-heading display-table" >
+                    <div class="row display-tr" >
+                        <h3 class="panel-title display-td" >Payment Details</h3>
+                        <div class="display-td" >                            
+                            <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                        </div>
+                    </div>                    
+                </div>
+                <div class="panel-body">
+                    <form role="form" id="payment-form" method="POST" action="javascript:void(0);">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="cardNumber">CARD NUMBER</label>
+                                    <div class="input-group">
+                                        <input 
+                                            type="tel"
+                                            class="form-control"
+                                            name="cardNumber"
+                                            placeholder="Valid Card Number"
+                                            autocomplete="cc-number"
+                                            required autofocus 
+                                        />
+                                        <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                                    <input 
+                                        type="tel" 
+                                        class="form-control" 
+                                        name="cardExpiry"
+                                        placeholder="MM / YY"
+                                        autocomplete="cc-exp"
+                                        required 
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 pull-right">
+                                <div class="form-group">
+                                    <label for="cardCVC">CV CODE</label>
+                                    <input 
+                                        type="tel" 
+                                        class="form-control"
+                                        name="cardCVC"
+                                        placeholder="CVC"
+                                        autocomplete="cc-csc"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="couponCode">COUPON CODE</label>
+                                    <input type="text" class="form-control" name="couponCode" />
+                                </div>
+                            </div>                        
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <input type="submit" value="START SUBSCRIPTION" class="subscription_btn">
+                            </div>
+                        </div>
+                        <div class="row" style="display:none;">
+                            <div class="col-xs-12">
+                                <p class="payment-errors"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>            
+            <!-- CREDIT CARD FORM ENDS HERE -->
+            
+            
+        </div>            
+        
+        
+    </div>
+
+
+
+
+
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+    </td>
+  </tr>
+  <tr>
+    <td>5 Year</td>
+    <td>25,000</td>
+    
+    <td><a href="#container7"> <button class="btn buy" id="myBtn14">Buy</button></a>
+
+
+
+
+
+ <div class="container10" id="container7" style="height: 100%;" >
+<p></p>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal14"  role="dialog">
+
+    <div class="modal-dialog" >
+    
+      <!-- Modal content-->
+      <div class="modal-content" >
+        <div class="modal-header" style="background-color: #767689; color: white;border-radius: 6px 6px 0px 0px;  ">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="font-size: 16px;">Pay using your Debit/Credit card.</h4>
+        </div>
+        <div class="modal-body" >
+          <p>
+
+
+
+
+
+
+
+          
+    <div class="row">
+        <!-- You can make it whatever width you want. I'm making it full width
+             on <= small devices and 4/12 page width on >= medium devices -->
+        <div class="col-xs-12 col-md-4">
+        
+        
+            <!-- CREDIT CARD FORM STARTS HERE -->
+            <div class="panel panel-default credit-card-box">
+                <div class="panel-heading display-table" >
+                    <div class="row display-tr" >
+                        <h3 class="panel-title display-td" >Payment Details</h3>
+                        <div class="display-td" >                            
+                            <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                        </div>
+                    </div>                    
+                </div>
+                <div class="panel-body">
+                    <form role="form" id="payment-form" method="POST" action="javascript:void(0);">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="cardNumber">CARD NUMBER</label>
+                                    <div class="input-group">
+                                        <input 
+                                            type="tel"
+                                            class="form-control"
+                                            name="cardNumber"
+                                            placeholder="Valid Card Number"
+                                            autocomplete="cc-number"
+                                            required autofocus 
+                                        />
+                                        <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                                    <input 
+                                        type="tel" 
+                                        class="form-control" 
+                                        name="cardExpiry"
+                                        placeholder="MM / YY"
+                                        autocomplete="cc-exp"
+                                        required 
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 pull-right">
+                                <div class="form-group">
+                                    <label for="cardCVC">CV CODE</label>
+                                    <input 
+                                        type="tel" 
+                                        class="form-control"
+                                        name="cardCVC"
+                                        placeholder="CVC"
+                                        autocomplete="cc-csc"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="couponCode">COUPON CODE</label>
+                                    <input type="text" class="form-control" name="couponCode" />
+                                </div>
+                            </div>                        
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <input type="submit" value="START SUBSCRIPTION" class="subscription_btn">
+                            </div>
+                        </div>
+                        <div class="row" style="display:none;">
+                            <div class="col-xs-12">
+                                <p class="payment-errors"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>            
+            <!-- CREDIT CARD FORM ENDS HERE -->
+            
+            
+        </div>            
+        
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+    </td>
+  </tr>
+
+  
+</table> 
+
+
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+<!------------------------------------------------------------The Modal box for- Service Records--------------------------------------------------------->
+
+<div class="container">
+<p></p>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #EB4603; border-radius: 6px 6px 0px 0px; color: white;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="font-size: 16px;">Here are your Service Records :</h4>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <p>
+
+
+     <table style="width:100%">
+  <tr>
+    <th>Date</th>
+    <th>Engineer Name</th> 
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td>16-Oct-2018</td>
+    <td>Ravi</td>
+    <td>Service</td>
+  </tr>
+  <tr>
+    <td>19-June-2017</td>
+    <td>Vijay</td>
+    <td>Not Working</td>
+  </tr>
+  <tr>
+    <td>16-Feb-2017</td>
+    <td>Kunal</td>
+    <td>Demo</td>
+  </tr>
+
+  <tr>
+    <td>16-Feb-2017</td>
+    <td>Ritesh</td>
+    <td>Service</td>
+  </tr>
+  <tr>
+    <td>16-Feb-2017</td>
+    <td>Ritesh</td>
+    <td>Service</td>
+  </tr>
+  <tr>
+    <td>16-Feb-2017</td>
+    <td>Ritesh</td>
+    <td>Service</td>
+  </tr>
+  <tr>
+    <td>16-Feb-2017</td>
+    <td>Ritesh</td>
+    <td>Service</td>
+  </tr>
+  <tr>
+    <td>16-Feb-2017</td>
+    <td>Ritesh</td>
+    <td>Service</td>
+  </tr>
+  <tr>
+    <td>16-Feb-2017</td>
+    <td>Ritesh</td>
+    <td>Service</td>
+  </tr>
+  <tr>
+    <td>16-Feb-2017</td>
+    <td>Ritesh</td>
+    <td>Service</td>
+  </tr>
+  <tr>
+    <td>16-Feb-2017</td>
+    <td>Ritesh</td>
+    <td>Service</td>
+  </tr>
+  <tr>
+    <td>16-Feb-2017</td>
+    <td>Ritesh</td>
+    <td>Service</td>
+  </tr>
+  <tr>
+    <td>16-Feb-2017</td>
+    <td>Ritesh</td>
+    <td>Service</td>
+  </tr>
+  <tr>
+    <td>16-Feb-2017</td>
+    <td>Ritesh</td>
+    <td>Service</td>
+  </tr>
+  <tr>
+    <td>16-Feb-2017</td>
+    <td>Ritesh</td>
+    <td>Service</td>
+  </tr>
+</table>   
+
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
+
+<!-------------------------------------------------------------------The Modal box for- Collaborate------------------------------------------------------->
+
+
+
+
+<div class="container">
+<p></p>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #EB4603; border-radius: 6px 6px 0px 0px; color: white;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="font-size: 16px;">Please choose who do you want to talk to :</h4>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <p>
+
+                     <table style="width:100%" >
+  <tr >
+    <th>Doctor Name</th>
+    <th>Using Machine Since</th> 
+    <th>Whatsapp</th>
+    <th>Call</th>
+  </tr>
+  <tr>
+    <td>Dr. Shammi</td>
+    <td>1 Year</td>
+    <td><a target="_blank" href="https://api.whatsapp.com/send?phone=917838698801" ><button class="btn buy" style="border: none; "><i class="fa fa-whatsapp"></i></button></a></td>
+    <td><a href="tel:7838698801"><button class="btn buy" style="border: none; "  ><i class="fa fa-phone"></i></button></a></td>
+  </tr>
+  <tr>
+    <td>Dr. Ravi</td>
+    <td>6 Months</td>
+    
+    <td><a target="_blank" href="https://api.whatsapp.com/send?phone=917838698801" ><button class="btn buy1" style="border: none; "><i class="fa fa-whatsapp"></i></button></a></td>
+
+    <td><a href="tel:7838698801"><button class="btn buy" style="border: none; "  ><i class="fa fa-phone"></i></button></a></td>
+  </tr>
+  <tr>
+    <td>Dr. Ritesh</td>
+    <td>2.5 Year</td>
+    
+    <td><a target="_blank" href="https://api.whatsapp.com/send?phone=919555914970" ><button class="btn buy2" style="border: none; "><i class="fa fa-whatsapp"></i></button></a></td>
+
+    <td><a href="tel:9555914970"><button class="btn buy" style="border: none; "  ><i class="fa fa-phone"></i></button></a></td>
+  </tr>
+
+
+  <tr>
+    <td>Dr. Kunal</td>
+    <td>2 Year</td>
+    
+    <td><a target="_blank" href="https://api.whatsapp.com/send?phone=919555575231" ><button class="btn buy2" style="border: none; "><i class="fa fa-whatsapp"></i></button></a></td>
+
+    <td><a href="tel:9555575231"><button class="btn buy" style="border: none; "  ><i class="fa fa-phone"></i></button></a></td>
+  </tr>
+
+
+  <tr>
+    <td>Dr. Rohit</td>
+    <td>2 Months</td>
+    
+    <td><a target="_blank" href="https://api.whatsapp.com/send?phone=919555751838" ><button class="btn buy2" style="border: none;  "><i class="fa fa-whatsapp"></i></button></a></td>
+
+    <td><a href="tel:9555751838"><button class="btn buy" style="border: none; "  ><i class="fa fa-phone"></i></button></a></td>
+  </tr>
+
+
+  <tr>
+    <td>Dr. Amit</td>
+    <td>2.5 Year</td>
+    
+    <td><a target="_blank" href="https://api.whatsapp.com/send?phone=917838698801" ><button class="btn buy2" style="border: none; "><i class="fa fa-whatsapp"></i></button></a></td>
+    
+    <td><a href="tel:7838698801"><button class="btn buy" style="border: none; "  ><i class="fa fa-phone"></i></button></a></td>
+  </tr>
+  
+</table>
+
+
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
+<!--------------------------------------------------------------------Box End--------------------------------------------------------------------->
+
+
+<div class="social-icons">
+    
+
+<!-- Add font awesome icons -->
+<a target="_blank" href="https://www.facebook.com/unicorndenmart" class="fa fa-facebook"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a target="_blank" href="https://twitter.com/unicorndenmart" class="fa fa-twitter"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a target="_blank" href="https://www.linkedin.com/company/unicorn-denmart-ltd./" class="fa fa-linkedin"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a target="_blank" href="https://www.youtube.com/channel/UCz7JVLrYOC37Liajkt6Vg1A" class="fa fa-youtube"></a>
+
+</div>
+
+
+<div class="footer">
+
+<a class="lmlogo" href="http://www.lazymonkey.co/" target="_blank"><img src="lazy.png"  alt="LazyMonkey logo"> </a>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 28, 2020 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    
+    var year = Math.floor(distance / (1000 * 60 * 60 * 24 * 30 * 12));
+    var month = Math.floor((distance % (1000 * 60 * 60 * 24 * 30 * 12)) / (1000 * 60 * 60 * 24 * 30));
+    var days = Math.floor((distance % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("warranty").innerHTML = year + "y" + " "+ month+ "m" + " " + days + "d "
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("warranty").innerHTML = "EXPIRED";
+    }
+}, 1000);
+
+
+//POP-UP BOX for-
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+
+
+$(document).ready(function(){
+    $("#myBtn2").click(function(){
+        $("#myModal2").modal();
+    });
+});
+
+
+$(document).ready(function(){
+    $("#myBtn3").click(function(){
+        $("#myModal3").modal();
+    });
+});
+
+
+$(document).ready(function(){
+    $("#myBtn4").click(function(){
+        $("#myModal4").modal();
+    });
+});
+
+
+$(document).ready(function(){
+    $("#myBtn5").click(function(){
+        $("#myModal5").modal();
+    });
+});
+
+
+
+$(document).ready(function(){
+    $("#myBtn6").click(function(){
+        $("#myModal6").modal();
+    });
+});
+
+
+
+$(document).ready(function(){
+    $("#myBtn7").click(function(){
+        $("#myModal7").modal();
+    });
+});
+
+
+
+$(document).ready(function(){
+    $("#myBtn8").click(function(){
+        $("#myModal8").modal();
+    });
+});
+
+
+$(document).ready(function(){
+    $("#myBtn9").click(function(){
+        $("#myModal9").modal();
+    });
+});
+
+
+$(document).ready(function(){
+    $("#myBtn10").click(function(){
+        $("#myModal10").modal();
+    });
+});
+
+
+$(document).ready(function(){
+    $("#myBtn11").click(function(){
+        $("#myModal11").modal();
+    });
+});
+
+
+$(document).ready(function(){
+    $("#myBtn12").click(function(){
+        $("#myModal12").modal();
+    });
+});
+
+$(document).ready(function(){
+    $("#myBtn13").click(function(){
+        $("#myModal13").modal();
+    });
+});
+
+
+$(document).ready(function(){
+    $("#myBtn14").click(function(){
+        $("#myModal14").modal();
+    });
+});
+
+
+
+
+</script>
+<footer></footer>
+    </body>
+</html>
