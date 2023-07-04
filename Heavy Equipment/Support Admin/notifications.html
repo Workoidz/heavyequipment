@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>LazyMonkey - Heavy Equipment Backend</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="assets/css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Paper Dashboard core CSS    -->
+    <link href="assets/css/paper-dashboard.css" rel="stylesheet"/>
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+
+</head>
+<style>
+
+footer + div > a > img{
+  display: none;
+}
+
+    .action
+    {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,.12);
+    display: inline-block;
+    margin-right: 5px;
+    color: #fff;
+    background: #68b3c8;
+    outline:none;
+}
+
+option
+{
+
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #fff;
+    color: grey;
+}
+
+
+  .namebtn {
+  border: 1px solid #d13535;
+  border-radius: 6px;
+  background-color: #d13535;
+  padding: 1px 5px;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.namebtn:hover {background: #fff; color: #d13535;}
+
+.success {color: white;}
+
+
+
+ body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background: #f4f3ef;
+}
+
+form{
+    position: relative;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input.searchbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+
+
+form:hover{
+    width: 100%;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: #777777;
+    color: white;
+}
+
+</style>
+
+
+<body>
+
+<div class="wrapper">
+	<div class="sidebar" data-background-color="white" data-active-color="danger">
+
+    <!--
+		Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
+		Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+	-->
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+               <a target="_blank" href="http://www.unicorndenmart.com/" class="simple-text">
+                    <img src="logo.png">
+                </a>
+            </div>
+
+             <ul class="nav">
+                <li>
+                    <a href="dashboard.html">
+                        <i class="ti-panel"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="duedates.html">
+                        <i class="ti-calendar"></i>
+                        <p>Due Dates</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="closed-call-records.html">
+                        <i class="ti-folder"></i>
+                        <p>Closed Call Records</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="warranty-records.html">
+                        <i class="ti-folder"></i>
+                        <p>Warranty Records</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="pending-client-requests.html">
+                        <i class="ti-time"></i>
+                        <p>Pending Calls</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="cust_list.html">
+                        <i class="ti-view-list-alt"></i>
+                        <p>Customer List</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="eng_list.html">
+                        <i class="ti-view-list-alt"></i>
+                        <p>Engineer List</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="notifications.html">
+                        <i class="ti-bell"></i>
+                        <p>Notifications</p>
+                    </a>
+                </li>
+                
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel">
+		<nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar bar1"></span>
+                        <span class="icon-bar bar2"></span>
+                        <span class="icon-bar bar3"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Notifications</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                       
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-bell"></i>
+                                    <p class="notification">5</p>
+									<p>Notifications</p>
+									<b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Notification 1</a></li>
+                                <li><a href="#">Notification 2</a></li>
+                                <li><a href="#">Notification 3</a></li>
+                                <li><a href="#">Notification 4</a></li>
+                                <li><a href="#">Another notification</a></li>
+                              </ul>
+                        </li>
+						<li class="dropdown">
+                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
+                                                           <i class="ti-user"></i>
+                                                            <span class="admin-name">Ravi</span>
+                                                            <i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
+                                                        </a>
+                                                    <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
+                                                        </li>
+                                                        <li><a href="setting.html"><i class="ti-settings"></i>&nbsp&nbsp<span class="edu-icon edu-settings author-log-ic"></span>Settings</a>
+                                                        </li>
+                                                        <li><a href="login/login.html"><i class="fa fa-sign-out"></i>&nbsp&nbsp<span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
+                                                        </li>
+                                                    </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="content">
+            <div class="container-fluid">
+
+                <div class="row" >
+
+
+                    <div class="col-md-12" >
+                    
+                        <form action="">
+                            <input type="search" class="searchbox">
+                                <i class="fa fa-search" onMouseOver="this.style.color='#fff'" onMouseOut="this.style.color='#777'" style="box-sizing: border-box; padding: 10px; width: 42.5px; height: 42.5px; position: absolute; top: 0; right: 0; border-radius: 50%; color: #7f7777; text-align: center; font-size: 1.2em; transition: all 1s;"></i>
+                        </form>
+                   
+                 </div>
+
+
+
+
+
+
+
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title" id="notisupport">Support</h4>
+                                <p class="category">Support requested by Clients</p>
+                            </div>
+                            <br>
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-striped"  style="text-align: justify;">
+                                    <thead>
+                                        <th>Name</th>
+                                        <th>ID</th>
+                                        <th>Equipment</th>
+                                        <th>Type</th>
+                                        <th>Date & Time</th>
+                                        <th>Select Engineer</th>
+                                        <th>Assign</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="profile.html" class="namebtn success">Ravi</a></td>
+                                            <td>5237</td>
+                                            <td>Genoray Papaya</td>
+                                            <td>Service</td>
+                                            <td>25-01-2019 13:00</td>
+                                            <td> <select name="Issue" style="width: 90%;" form="action" class="action" >
+                                                        <option>-select-</option>
+                                                        <option>Vijay</option>
+                                                        <option>Sanjay</option>
+                                                        <option>Ajay</option>
+                                                        <option>Dhananjay</option>
+                                                </select>
+                                            </td>
+                                            <td><button class="action">Assign Engineer</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="namebtn success">Ritesh</a></td>
+                                            <td>5238</td>
+                                            <td>Anthos</td>
+                                            <td>Not Working</td>
+                                            <td>30-12-2018 13:00</td>
+                                            <td> <select name="Issue" style="width: 90%;" form="action" class="action" >
+                                                        <option>-select-</option>
+                                                        <option>Vijay</option>
+                                                        <option>Sanjay</option>
+                                                        <option>Ajay</option>
+                                                        <option>Dhananjay</option>
+                                                </select>
+                                            </td>
+                                            <td><button class="action">Assign Engineer</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="namebtn success">Rohit</a></td>
+                                            <td>5239</td>
+                                            <td>Genoray Papaya</td>
+                                            <td>Demo</td>
+                                            <td>27-01-2019 13:00</td>
+                                            <td> <select name="Issue" style="width: 90%;" form="action" class="action" >
+                                                        <option>-select-</option>
+                                                        <option>Vijay</option>
+                                                        <option>Sanjay</option>
+                                                        <option>Ajay</option>
+                                                        <option>Dhananjay</option>
+                                                </select>
+                                            </td>
+                                            <td><button class="action">Assign Engineer</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="namebtn success">Kunal</a></td>
+                                            <td>5240</td>
+                                            <td>Anthos</td>
+                                            <td>Service</td>
+                                            <td>28-01-2019 12:00</td>
+                                            <td> <select name="Issue" style="width: 90%;" form="action" class="action" >
+                                                        <option>-select-</option>
+                                                        <option>Vijay</option>
+                                                        <option>Sanjay</option>
+                                                        <option>Ajay</option>
+                                                        <option>Dhananjay</option>
+                                                </select>
+                                            </td>
+                                            <td><button class="action">Assign Engineer</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="namebtn success">Fergus</a></td>
+                                            <td>5241</td>
+                                            <td>Genoray Papaya</td>
+                                            <td>Demo</td>
+                                            <td>03-02-2019 15:00</td>
+                                            <td> <select name="Issue" style="width: 90%;" form="action" class="action" >
+                                                        <option>-select-</option>
+                                                        <option>Vijay</option>
+                                                        <option>Sanjay</option>
+                                                        <option>Ajay</option>
+                                                        <option>Dhananjay</option>
+                                                </select>
+                                            </td>
+                                            <td><button class="action">Assign Engineer</button></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title" id="notiwarranty">WarrantyRenewed</h4>
+                                <p class="category">Warranty renewed by Clients</p>
+                            </div>
+                            <br>
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <th>Name</th>
+                                        <th>ID</th>
+                                        <th>Equipment</th>
+                                        <th>Warranty Extended for</th>
+                                        <th>Action</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="profile.html" class="namebtn success">Ravi</a></td>
+                                            <td>5237</td>
+                                            <td>Genoray Papaya</td>
+                                            <td>3 Year</td>
+                                            <td><img src="edit2.png">&nbsp&nbsp&nbsp&nbsp<img src="delete.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="namebtn success">Ritesh</a></td>
+                                            <td>5238</td>
+                                            <td>Anthos</td>
+                                            <td>8 Year</td>
+                                            <td><img src="edit2.png">&nbsp&nbsp&nbsp&nbsp<img src="delete.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="namebtn success">Rohit</a></td>
+                                            <td>5239</td>
+                                            <td>Genoray Papaya</td>
+                                            <td>3 Year</td>
+                                            <td><img src="edit2.png">&nbsp&nbsp&nbsp&nbsp<img src="delete.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="namebtn success">Kunal</a></td>
+                                            <td>5240</td>
+                                            <td>Anthos</td>
+                                            <td>1 Year</td>
+                                            <td><img src="edit2.png">&nbsp&nbsp&nbsp&nbsp<img src="delete.png"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="namebtn success">Fergus</a></td>
+                                            <td>5241</td>
+                                            <td>Genoray Papaya</td>
+                                            <td>8 Year</td>
+                                            <td><img src="edit2.png">&nbsp&nbsp&nbsp&nbsp<img src="delete.png"></td>
+                                        </tr>
+                                       
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title" id="notispare">Spare Requirement</h4>
+                                <p class="category">Spare Parts requested by Engineers</p>
+                            </div>
+                            <br>
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <th>Doctor Name</th>
+                                        <th>Doctor ID</th>
+                                        <th>Equipment</th>
+                                        <th>Spare Parts Requested</th>
+                                        <th>Request Date</th>
+                                        <th>Engineer Name</th>
+                                        <th>Engineer ID</th>
+                                        <th>Eng Comment</th>
+                                        <th>Your Comment</th>
+                                        <th>Action</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="profile.html" class="namebtn success">Ravi</a></td>
+                                            <td>5237</td>
+                                            <td>Genoray Papaya</td>
+                                            <td>Spare 1</td>
+                                            <td>23-12-2018</td>
+                                            <td>Vijay</td>
+                                            <td>2323</td>
+                                            <td>None</td>
+                                            <td><input type="text" class="form-control border-input" placeholder="Comment Here" ></td>
+                                            <td><button class="action">Accept</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="namebtn success">Ritesh</a></td>
+                                            <td>5238</td>
+                                            <td>Anthos</td>
+                                            <td>Spare 3</td>
+                                            <td>23-12-2018</td>
+                                            <td>Deenanath</td>
+                                            <td>2324</td>
+                                            <td>None</td>
+                                            <td><input type="text" class="form-control border-input" placeholder="Comment Here" ></td>
+                                            <td><button class="action">Accept</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="namebtn success">Rohit</a></td>
+                                            <td>5239</td>
+                                            <td>Genoray Papaya</td>
+                                            <td>Spare 1</td>
+                                            <td>23-12-2018</td>
+                                            <td>Chauhan</td>
+                                            <td>2325</td>
+                                            <td>None</td>
+                                            <td><input type="text" class="form-control border-input" placeholder="Comment Here" ></td>
+                                            <td><button class="action">Accept</button></td>
+                                        </tr>
+                                        <tr>
+                                           <td><a class="namebtn success">Kunal</a></td>
+                                            <td>5240</td>
+                                            <td>Anthos</td>
+                                            <td>Spare 3</td>
+                                            <td>23-12-2018</td>
+                                            <td>Badshah</td>
+                                            <td>2326</td>
+                                            <td>None</td>
+                                            <td><input type="text" class="form-control border-input" placeholder="Comment Here" ></td>
+                                            <td><button class="action">Accept</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a class="namebtn success">Fergus</a></td>
+                                            <td>5241</td>
+                                            <td>Genoray Papaya</td>
+                                            <td>Spare 2</td>
+                                            <td>23-12-2018</td>
+                                            <td>Shehanshah</td>
+                                            <td>2327</td>
+                                            <td>None</td>
+                                            <td><input type="text" class="form-control border-input" placeholder="Comment Here" ></td>
+                                            <td><button class="action">Accept</button></td>
+                                        </tr>
+                                       
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+       <footer class="footer">
+            <div class="container-fluid">
+                
+                 <div class="copyright pull-right">
+                    <a target="_blank" href="http://www.lazymonkey.co"><img src="lazy.png"></a>
+                </div>
+            </div>
+        </footer>
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--  Checkbox, Radio & Switch Plugins -->
+	<script src="assets/js/bootstrap-checkbox-radio.js"></script>
+
+	<!--  Charts Plugin -->
+	<script src="assets/js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="assets/js/bootstrap-notify.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
+	<script src="assets/js/paper-dashboard.js"></script>
+
+	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+	<script src="assets/js/demo.js"></script>
+
+</html>

@@ -1,0 +1,47 @@
+Discuss a "To-Do list " feature with Ritesh Sir (where all upcoming warranty & Due services will come automatically, so it will be eaier for support people to handle these things with escalation level so support people dont miss out any service / warranty)
+
+Heavy Equipment - Support
+
+		Done
+			icons before side navbar & service, warranty blocks 
+			lazymonkey logo in footer 
+			diffrenet table when tab on notification Notification table "Action " button clickable
+			make names clickable in cutomer list and notification
+			Add search box 
+			Dr Profile (when click on names)
+			See how bottom border tab works (for due dates & doc profile) use whats been done in footer "nav" see documentional "panel"
+			Add "Service" & "Warranty" radio button to send reminder to doctors (Added in profile sector)
+			Add Engineer Profile as well
+			See how bottom border tab works (for due dates) use whats been done in footer "nav" see documentional "panel"
+			Service, Warranty & Spare blocks clickable
+			Make Header Notification also clickable
+			"Setting" clickable (will open setting to edit social media  & whatsapp chat support)
+			Put Setting in a dropdown in navbar
+			Add a login page	
+			Add a forgot Password button
+			Add a Records Tab in side bar (Records--> Client Records & Closed Call Records)
+
+
+		Date Range Picker for graphs (check if its is in "form" as well if so correct it)
+
+
+
+
+
+
+
+For 3D Menu
+https://codepen.io/Moslim/pen/zdPrVp	
+https://tympanus.net/codrops/2017/11/08/expanding-grid-item-animation/
+
+For Quad Circle(salt logo)
+https://www.w3schools.com/hTml/tryit.asp?filename=tryhtml_svg_circle
+
+
+For Super Admin Analytics
+
+https://codepen.io/Befeepilf/pen/ALKgWP
+
+
+For Pacific Bot UI
+https://codepen.io/Aoyue/pen/rLExYX
