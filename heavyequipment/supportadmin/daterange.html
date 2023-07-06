@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Essential JS 2 TypeScript Components" />
+    <meta name="author" content="Syncfusion" />
+    <link href="//cdn.syncfusion.com/ej2/fabric.css" rel="stylesheet" />
+    <script type="text/javascript">
+      if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+        document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.1/bluebird.min.js"><\/script>');
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="container">
+      <input id="daterangepicker" type="text">
+    </div>
+    <style>
+      body {
+        height: 450px;
+        overflow: hidden;
+      }
+
+      #container {
+        max-width: 260px;
+        margin: 0 auto;
+      }
+
+      .e-input-group .e-input-group-icon,
+      .e-input-group.e-control-wrapper .e-input-group-icon,
+      .e-input-group.e-control-wrapper:not(.e-disabled) .e-input-group-icon:hover {
+        background: none;
+      }
+
+      .e-input-group:not(.e-disabled) .e-input-group-icon:active,
+      .e-input-group.e-control-wrapper:not(.e-disabled) .e-input-group-icon:active {
+        background: rgb(0, 120, 214);
+      }
+    </style>
+  </body>
+
+  <script type="text/javascript">
+    
+    import { enableRipple } from '@syncfusion/ej2-base';
+enableRipple(false);
+import { DateRangePicker } from '@syncfusion/ej2-calendars';
+/**
+ * DateRangePicker Presets sample
+ */
+
+    let start: Date = new Date(new Date(new Date().setDate(new Date().getDate() - (new Date().getDay() + 7) % 7)).toDateString());
+    let daterangepicker: DateRangePicker = new DateRangePicker({
+        placeholder: "Select Range",
+        startDate:new Date(new Date(new Date(new Date().setMonth(new Date().getMonth() - 1)).setDate(1)).toDateString()),
+        endDate:new Date(new Date(new Date().setDate(0)).toDateString()),
+        presets: [
+            {
+                label: 'This Week',
+                start: start,
+                end: new Date(new Date(new Date().setDate(start.getDate() + 6)).toDateString())
+            },
+            {
+                label: 'This Month',
+                start: new Date(new Date(new Date().setDate(1)).toDateString()),
+                end: new Date(new Date(new Date(new Date().setMonth(new Date().getMonth() + 1)).setDate(0)).toDateString())
+            },
+            {
+                label: 'Last Month',
+                start: new Date(new Date(new Date(new Date().setMonth(new Date().getMonth() - 1)).setDate(1)).toDateString()),
+                end: new Date(new Date(new Date().setDate(0)).toDateString())
+            },
+            {
+                label: 'Last Year',
+                start: new Date(new Date(new Date().getFullYear() - 1, 0, 1).toDateString()),
+                end: new Date(new Date(new Date().getFullYear() - 1, 11, 31).toDateString())
+            }
+        ]
+    });
+    daterangepicker.appendTo('#daterangepicker');
+    daterangepicker.show();
+
+  </script>
+
+</html>

@@ -1,0 +1,233 @@
+
+<!doctype html>
+<html>
+    <head>
+
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Heavy Equipment</title>
+
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-select.css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+        <style>
+        footer + div > a > img{
+  display: none;
+}
+
+                .c-chat-box {
+  border-radius: 30px;
+  text-align: right;
+  padding: 5px;
+  width: 90%;
+  margin: 20px 25px;
+  border-bottom-width: 1px;
+  color: #000;
+
+}
+
+        .animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce {
+ 0%, 100% {
+ -webkit-transform: translateY(0);
+}
+ 50% {
+ -webkit-transform: translateY(-5px);
+}
+}
+@keyframes bounce {
+ 0%, 100% {
+ transform: translateY(0);
+}
+ 50% {
+ transform: translateY(-5px);
+}
+}
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+
+     
+.footer {
+
+   position: fixed;
+   left: 5px;
+   bottom: 0;
+   width: 10%;
+   background-color: transparent;
+   color: white;
+   text-align: left;
+}
+
+
+
+       
+        .social-icons{
+
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #EB4603;
+   color: white;
+   text-align: right;
+        }
+
+        .fa {
+  padding: 5px;
+  font-size: 11px;
+  width: 12px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:50%;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+        div.transbox 
+            {
+             text-align: center;
+              margin: 30px;
+              background-color: #ffffff;
+              border: 0px solid black;
+              opacity: 0.85;
+              filter: alpha(opacity=60); /* For IE8 and earlier */
+              border-radius:10px;
+            }
+
+             div.transbox p 
+            {
+              margin: 5%;
+              font-weight: bold;
+              color: #000000;
+            }
+
+
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                margin: 0;
+                padding: 0;
+                line-height: 1.5;
+                color: black;
+            }
+
+            
+            .company-logo
+            {
+
+                text-align: center;
+                background: #fff;
+                padding: 5px;
+
+            }
+            p
+            {
+                margin-left: 30px;
+                color: white;
+                font-size: 4.5vw;
+                font-weight: lighter;
+            }
+
+        </style>
+        
+    </head>
+
+    <body style="background-image:url('background3.jpg')">
+
+    <header>
+        <div class="company-logo"> <a href="http://www.unicorndenmart.com/" target="_blank"><img src="logo.png"  alt="Pacific Mall"> </a></div>
+
+    </header>
+    <div class="c-chat-box animated bounce" onclick="window.location = 'https://wa.me/917838698801/?text=Hello';" > <span><img src="whatsapp.png"></span></div>
+
+<div class="transbox">
+<p style="padding: 20px 30px;margin-top: 40px;">Thank You</p>
+</div>
+
+<div class="social-icons">
+    
+
+<!-- Add font awesome icons -->
+<a target="_blank" href="https://www.facebook.com/unicorndenmart" class="fa fa-facebook"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a target="_blank" href="https://twitter.com/unicorndenmart" class="fa fa-twitter"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a target="_blank" href="https://www.linkedin.com/company/unicorn-denmart-ltd./" class="fa fa-linkedin"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a target="_blank" href="https://www.youtube.com/channel/UCz7JVLrYOC37Liajkt6Vg1A" class="fa fa-youtube"></a>
+
+</div>
+
+
+<div class="footer">
+
+<a class="lmlogo" href="http://www.lazymonkey.co/" target="_blank"><img src="wlazy.png"  alt="LazyMonkey logo"> </a>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 28, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    
+    var year = Math.floor(distance / (1000 * 60 * 60 * 24 * 30 * 12));
+    var month = Math.floor((distance % (1000 * 60 * 60 * 24 * 30 * 12)) / (1000 * 60 * 60 * 24 * 30));
+    var days = Math.floor((distance % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("warranty").innerHTML = year + "y" + " "+ month+ "m" + " " + days + "d "
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("warranty").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+<footer></footer>
+    </body>
+</html>
